@@ -1,7 +1,8 @@
 import os
 import sys
 
-path = '/home/pedro'
+user = os.getlogin()
+path = f'/home/{user}'
 
 def find_file(filename):
     for root, dirs, files in os.walk(path):
